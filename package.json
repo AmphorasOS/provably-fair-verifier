@@ -4,6 +4,7 @@
   "description": "Win5X provably fair verifier",
   "main": "bundle",
   "author": "Win5X",
+  "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
