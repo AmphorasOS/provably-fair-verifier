@@ -65,8 +65,8 @@ export default class Cards {
      * @return {Object[]} The cards.
      */
     verifyDiamondPoker(seed_data) {
-        const gems = ['green', 'purple', 'yellow', 'red', 'light_blue', 'orange', 'blue'];
-        const max_gems = 10;
+        const gems = ['green', 'purple', 'yellow', 'red', 'light_blue', 'pink', 'blue'];
+        const max_gems = 5;
         return Seed.extractFloats(seed_data, max_gems).map((cardIndex) => gems[Math.floor(cardIndex * 7)]);
     }
 

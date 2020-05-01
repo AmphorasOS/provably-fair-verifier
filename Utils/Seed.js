@@ -35,7 +35,7 @@ export default class Seed {
     }
 
     /**
-     * Given a GAME_SEED_DATA object will keep yielding the next byte from its HMAC_SHA256 sequence.
+     * Given a seed_data object will keep yielding the next byte from its HMAC_SHA256 sequence.
      * Please be aware this method will start with cursor set to zero,
      * and in the case of all 32 bytes getting used it will increment the cursor to generate a new HMAC_SHA256 sequence.
      * @param {Object} seed_data
