@@ -12,11 +12,11 @@ export default class Plinko {
      * @param {string} seed_data.serverSeed
      * @param {string} seed_data.clientSeeed
      * @param {integer} seed_data.nonce
+     * @param {integer} pins
      * @return {integer} The directions.
      */
-    verify(seed_data) {
-        const directions = ['L', 'R'];
-        return Seed.extractFloats(seed_data, 16).map((rowIndex) => directions[Math.floor(rowIndex * 2)]);
+    verify(seed_data, pins) {
+        return Math.floor(Seed.extractFloat(seed_data) * (pins + 1));
     }
 
 }
