@@ -13,7 +13,7 @@ export default class Plinko {
      * @param {string} seed_data.clientSeeed
      * @param {integer} seed_data.nonce
      * @param {integer} pins
-     * @return {integer} The directions.
+     * @return {integer} The bucket
      */
     verify(seed_data, pins) {
         return Math.floor(Seed.extractFloat(seed_data) * (pins + 1));
