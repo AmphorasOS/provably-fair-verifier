@@ -34,9 +34,9 @@ export default class Stairs {
         ];
 
         let output = [];
-        for(let i = 0; i < rows.length; i++) {
-            let array = ArrayUtils.generateArrayWithRange(0, rows[1]);
-            output.push(Seed.extractFloats(seed_data, rows[i] * i).splice(i, mines * i).map((float, index) => array.splice(Math.floor(float * (rows[i] - index + 1)), 1)[0]).splice(0, mines));
+        for(let i = 1; i <= rows.length; i++) {
+            let array = ArrayUtils.generateArrayWithRange(0, rows[i - 1]);
+            output.push(Seed.extractFloats(seed_data, rows[i - 1] * i).splice(i, mines * i).map((float, index) => array.splice(Math.floor(float * (rows[i - 1] - index + 1)), 1)[0]).splice(0, mines));
         }
 
         return output;
