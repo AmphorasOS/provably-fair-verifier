@@ -9,6 +9,7 @@ import Plinko from "./Games/Plinko";
 import Roulette from "./Games/Roulette";
 import Wheel from "./Games/Wheel";
 import Stairs from "./Games/Stairs";
+import Tower from "./Games/Tower";
 
 module.exports = {
     Cards,
@@ -21,5 +22,6 @@ module.exports = {
     Plinko,
     Roulette,
     Wheel,
-    Stairs
+    Stairs,
+    Tower
 };
