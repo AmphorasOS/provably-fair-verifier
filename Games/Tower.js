@@ -17,7 +17,7 @@ export default class Tower {
      * @return {object}
      */
     verify(seed_data, mines) {
-        const columns = 5, rows = 10;
+        const columns = 4, rows = 10;
 
         let output = [];
         for(let i = 1; i <= rows; i++) {
