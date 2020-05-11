@@ -22,7 +22,7 @@ export default class Tower {
         let output = [];
         for(let i = 1; i <= rows; i++) {
             let array = ArrayUtils.generateArrayWithRange(0, columns);
-            output.push(Seed.extractFloats(seed_data, columns * i).splice(i, i * mines).map((float, index) => array.splice(Math.floor(float * (columns - index + 1)), 1)[0]).splice(0, mines));
+            output.push(Seed.extractFloats(seed_data, columns * i).splice(i - 1, i * mines).map((float, index) => array.splice(Math.floor(float * (columns - index + 1)), 1)[0]).splice(0, mines));
         }
 
         return output;
