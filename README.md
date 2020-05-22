@@ -1,6 +1,6 @@
-# Win5X Provably Fair Verifier
+# Amphoras.net Provably Fair Verifier
 
-Verifies that game results on Win5X.com are provably fair.
+Verifies that game results on Amphoras.net are provably fair.
 
 #### Usage example
 ```
