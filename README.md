@@ -1,6 +1,6 @@
-# Amphoras.net Provably Fair Verifier
+# Cazino.ltd Provably Fair Verifier
 
-Verifies that game results on Amphoras.net are provably fair.
+Verifies that game results on Cazino.ltd are provably fair.
 
 #### Usage example
 ```
